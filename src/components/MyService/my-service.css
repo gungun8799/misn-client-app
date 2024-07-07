@@ -1,0 +1,100 @@
+.my-service {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Adjust the height to full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F6F5F2;
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    flex-grow: 1;
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.my-service-title {
+    margin-top:-85vh;
+    position: fixed;
+    display: flex;
+    
+}
+
+.space {
+    margin-top:15vh;
+}
+
+.service-item {
+    background-color: white;
+    padding: 15px;
+    width:40vh;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.service-item p {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+.service-item p span {
+    font-weight: bold;
+}
+
+.service-item.in-progress span {
+    color: orange;
+}
+
+.service-item.action-required span {
+    color: red;
+}
+
+.service-item.application-approved span {
+    color: green;
+}
+
+.service-item.request-rejected span {
+    color: red;
+}
+
+.service-item.received span {
+    color: green;
+}
+
+.service-item.service-approved span {
+    color: green;
+}
+
+.service-item.service-received span {
+    color: green;
+}
+
+.back-button {
+    background-color: #118881;
+    color: white;
+    width: 100px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background-color: #0d6d62;
+}

@@ -1,0 +1,53 @@
+/* src/components/MyPage/MyPage.css */
+
+.my-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #F6F5F2, #f0e7ca);
+    padding: 20px;
+    margin-top:-50px;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-bottom: 40px;
+  }
+  
+  .nav-button {
+    width: 250px;
+    height: 100px;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #00796b;
+    background-color: white;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: #00796b;
+    color: white;
+  }
+  
+
+  .back-button-my-page {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 1em;
+    left: 5px;
+    top: 40px;
+    cursor: pointer;
+    position: absolute;
+
+    
+
+
+  }

@@ -1,0 +1,130 @@
+/* src/components/Signup/Signup.css */
+.signup-container {
+  display: flex;
+  justify-content: top;
+  align-items: top;
+  height: 210vh; /* Use full viewport height */
+  background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
+  padding: 20px; /* Add padding to prevent content from touching the edges */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.signup-container .back-button-component {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #118881;
+  z-index: 1000;
+  margin-top: -0vh;
+}
+
+.signup-container .back-button-component:hover {
+  color: #118881;
+}
+
+.signup-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
+  width: 100%;
+  max-width: 400px; /* Set a max width to fit the screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  overflow-y: auto; /* Add vertical scroll if content exceeds screen height */
+}
+
+.signup-title {
+  margin-top: 10px;
+  font-size: 2em;;
+}
+
+.signup-form input {
+  width: 100%;
+  height: 20vh;
+  padding: 2vh;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-form .date-input {
+  padding: 3vh;
+  width: 95%;
+}
+
+.signup-form .input .county-list {
+  height: 10px;
+
+}
+
+.county-select {
+  width: 111%; /* Ensure the dropdown takes full width */
+  padding: 10px; /* Add padding for better spacing */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 20px;
+  align-items: left;
+  justify-content: left;
+  margin-left:2px;
+  background-color: #fff; /* White background */
+  font-size: 16px; /* Increase font size for readability */
+  color: #333; /* Dark text color */
+  appearance: none; /* Remove default arrow for custom styling */
+  -webkit-appearance: none; /* Remove default arrow for Safari */
+  -moz-appearance: none; /* Remove default arrow for Firefox */
+}
+
+.county-select:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+.county-select option {
+  color: #333; /* Ensure option text is dark */
+}
+
+
+.signup-form  .profile-photo-input {
+  padding: 4vh;
+  width: 95%;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #333;
+}
+
+.signup-form .error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.signup-form label {
+  align-self: flex-start;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}

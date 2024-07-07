@@ -1,0 +1,116 @@
+/* src/components/Login/Login.css */
+:root {
+  --vh: 1vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(var(--vh, 1vh) * 100);
+  background-color: #F6F5F2;
+  /* background-image: url('/src/assets/agent-app-login-background.png'); */
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.000001);
+  padding: 20px;
+  margin-bottom: 15vh;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo-login {
+  width: 30vh;
+  margin-bottom: -1vh;
+}
+
+input {
+  width: 42vh; /* Adjusted to be consistent with other elements */
+  height: 4.5vh; /* Adjust height as needed */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(175, 175, 175, 0.3);
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+}
+
+.google-login,
+.signup,
+.login-button {
+  width: 32vh; /* Adjusted to be consistent */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.google-login {
+  background-color: #ffffff;
+  color: rgb(54, 54, 54);
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
+  height: 7vh;
+  width: 37.5vh;
+}
+
+.google-logo {
+  width: 4vh; /* Adjust size as needed */
+  height: 4vh; /* Adjust size as needed */
+  align-items: center;
+  padding-right: 5px;
+}
+
+.signup {
+  background-color: #ffffff;
+  color: #029D9C;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  height: 8vh;
+  width: 40vh;
+}
+
+.login-button {
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  height: 8vh;
+  width: 40vh;
+}
+
+@media (orientation: landscape) {
+  .login-container {
+    height: 100vw;
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

@@ -1,0 +1,74 @@
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  z-index: 1000; /* Ensure the bar is always on top */
+}
+
+.bottom-bar.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Hide the bottom bar when the virtual keyboard is active */
+@media (max-height: 500px) {
+  .bottom-bar {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.bottom-bar-button {
+  background: none;
+  border: none;
+  color: #acacac;
+  font-size: 0.9em;
+  text-align: center;
+  cursor: pointer;
+  position: relative; /* Ensure relative positioning for the badge */
+}
+
+.bottom-bar-button i {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.bottom-bar-button span {
+  display: block;
+  font-size: 0.75em;
+}
+
+.bottom-bar-button.active {
+  color: #ffffff;
+  background-color: #118881;
+  font-weight: bold;
+  border-bottom: 2px solid #118881;
+}
+
+.bottom-bar-button:hover {
+  color: #118881;
+  background-color: #e0e0e0; /* Updated hover background color to remove transition effect */
+}
+
+/* Notification badge */
+.notification-badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 5px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75em;
+  font-weight: bold;
+}

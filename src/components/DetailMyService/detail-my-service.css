@@ -1,0 +1,396 @@
+.detail-my-service {
+  padding: 20px;
+  max-width: 800px;
+  height: 100vh;
+  margin: auto;
+  background: #F6F5F2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20vh;
+}
+
+.detail-my-service .bottom-bar {
+  margin-left: -20px;
+  margin-bottom: 10px;
+}
+
+.service-detail-title {
+  margin-top: 10px;
+}
+
+
+.detail-my-service .back-button-component {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.back-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background: #0056b3;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.program-name-title {
+  color:#118881;
+  margin-left: 10px;
+}
+
+.service-details-title {
+  margin-top: 10px;
+}
+
+
+.approved-program-box {
+  background-color: rgb(255, 255, 255);
+  border: solid 1px #118881;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.basic-info {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: #ffffff;
+}
+
+.basic-info h3 {
+  margin-top: 0;
+}
+
+.basic-info.collapsed h3 {
+  cursor: pointer;
+  height: 1px;
+}
+
+.my-documents-title {
+  margin-left: 10px;
+}
+
+.delete-button-DMS {
+  margin-right: 90px;
+  background-color: white;
+  border: solid 1px #994585;
+  border-radius: 10px;
+}
+
+.document-item-list {
+  margin-left: 30px;
+}
+
+.documents-section {
+  margin-bottom: 20px;
+  background-color: white;
+  border: solid 1px #118881;
+  border-radius: 10px;
+  
+}
+
+.documents-list {
+  list-style: none;
+  padding: 0;
+}
+
+.documents-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.documents-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+.documents-list a:hover {
+  text-decoration: underline;
+}
+
+
+.document-name-input {
+  width: 80%;
+  margin-left: 25px;
+  height: 20px;
+  margin-top:0px;
+}
+
+
+.submit-button,
+.upload-button,
+.service-received-button,
+.issue-ticket-button {
+  background: #118881;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.upload-button {
+  margin-left: 100px;
+}
+
+.submit-button:hover,
+.upload-button:hover,
+.service-received-button:hover,
+.issue-ticket-button:hover {
+  background: #218838;
+}
+
+.error-message {
+  margin-left: 25px;
+  margin-top: -8px;
+}
+
+.response-textarea,
+.file-input-DMS {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: -15px;
+  margin-left: 18px;
+  border: solid 1px rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  
+}
+
+.upload-progress {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.upload-message-DMS {
+  margin-top: 10px;
+  margin-left: 95px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-waiting-for-agent-review {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.status-service-received {
+  color: #118881;  
+  font-weight: bold;
+
+}
+
+.status-documents-requested {
+  color: #ff0019;
+  font-weight: bold;
+}
+
+.status-service-approved {
+  color: #1acf0d;
+  font-weight: bold;
+}
+
+.received-service-button {
+background-color: #118881;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+margin-bottom: 20px;
+cursor: pointer;
+margin-top: 10px;
+margin-left: 15vw;
+}
+
+.raise-issue-button {
+  background-color: #ffffff;
+  color: #118881;
+  border: solid 2px #118881;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 27vw;
+}
+
+
+
+
+.animation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.received-service-details-title {
+  margin-left: 10px;
+}
+
+.received-service-details-container {
+  background-color: white;
+  border: solid 1px #118881;
+  border-radius: 10px;
+}
+
+.animation-content {
+  text-align: center;
+  color: #fff;
+}
+
+.checkmark-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #28a745;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.checkmark {
+  width: 40px;
+  height: 20px;
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  transform: rotate(-45deg);
+}
+
+
+
+.agent-comment-response {
+  color: #dc3545;
+}
+
+.client-comment-response {
+  color: #007bff;
+}
+
+
+.final-program-name {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+
+.add-slot-button {
+  background-color: #F6F5F2;
+  border-radius: 20px;
+  border:none;
+  height: 40px;
+  width:100px;
+
+}
+
+.confirm-slot-button {
+  background-color: #118881;
+  border-radius: 10px;
+  height: 40px;
+  width:200px;
+  color: white;
+  border:none;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: inset;
+  margin-left:60px;
+
+}
+
+.chat-with-agent-button {
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 40px;
+  width:200px;
+  color: #118881;
+  
+  border:solid 1px #118881;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: inset;
+  margin-left:60px;
+}
+
+.confirm-message {
+  color: #218838;
+}
+
+.contact-back-information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start of the container */
+  gap: 15px; /* Add space between elements */
+  padding: 20px; /* Add padding around the container */
+  background-color: #f8f9fa; /* Optional: background color */
+  border: 1px solid #ccc; /* Optional: border for the container */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+.contact-back-information input {
+  width: 90%;
+}
+
+.delete-slot-button {
+  background-color: #f8f9fa;
+  color: grey;
+  border: none;
+  margin-left: 20px;
+}
+
+.program-onboard-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.screening-button {
+  padding: 10px 20px;
+  background-color: #118881;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 4.2vh;
+}
+
+.program-name-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.final-program-name-2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-left:0px;
+}

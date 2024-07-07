@@ -1,0 +1,191 @@
+.issueTicket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+
+
+
+.backButtonIssueTicket {
+    background-color: white;
+    border: none;
+    color: #118881;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 10px;
+    margin-left: -85vw;
+
+}
+
+
+.ticketDetail {
+    margin-bottom: 50px;
+    flex: 1; /* Take up all remaining space */
+    display: flex;
+    height: 200px;
+    width: 100%;
+    flex-direction: column;
+    overflow-y: auto; /* Enable scrolling for ticket details */
+}
+
+.clientResponse {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #e1e0e0;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+.clientInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 20px;
+    height: 20px;
+    font-weight: bold;
+    color: #118881;
+}
+
+.ticketId {
+    font-size: 0.8em;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.clientInfo img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.chatLog {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.chatMessageIssue {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.chatMessageIssue.agentMessage {
+    background-color: #deeeef;
+    align-self: flex-end;
+}
+
+.chatMessageIssue.clientMessage {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+}
+
+.chatMessageIssue .timestamp {
+    font-size: 0.8em;
+    color: #888;
+    align-self: flex-end;
+}
+
+.agentResponse {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Position relative to parent container */
+    width: 95%; /* Full width */
+    background-color: #ffffff;
+    bottom: 40px;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    z-index: 1000;
+}
+
+.agentResponse textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    max-height: 150px; /* Limit the height of the textarea */
+    overflow-y: auto; /* Make the textarea scrollable */
+}
+
+.agentResponse button {
+    padding: 10px;
+    background-color: #118881;
+    color: white;
+    border: none;
+    width: 100%; /* Full width */
+    bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.agentResponse button:hover {
+    background-color: #0056b3;
+}
+
+/* Ensure the agent-response stays above the virtual keyboard */
+@media (max-width: 768px) {
+    .agentResponse {
+        padding: 10px;
+        margin-bottom: env(safe-area-inset-bottom); /* Ensure input is above the keyboard on iOS */
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .agentResponse {
+        position: fixed;
+        bottom: 0;
+        width: 90%;
+        left: 10px;
+        right: 15px;
+        padding: 10px;
+    }
+
+    .agentResponse textarea {
+        width: 93.5%;
+    }
+
+    .agentResponse button {
+        width: 350px;
+    }
+
+    html {
+        height: 130%;
+    }
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.issueTicket {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+}

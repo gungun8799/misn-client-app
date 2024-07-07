@@ -1,0 +1,75 @@
+.my-agent-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #F6F5F2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the box within the container */
+}
+
+.my-agent-box {
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  margin-bottom: 20vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #118881;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.agent-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #118881;
+  margin: 10px 0;
+}
+
+/* p {
+  margin: 5px 0;
+  color: #666;
+  text-align: center;
+  width: 80%;
+} */
+
+.chat-button {
+  background-color: #118881;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.chat-button:hover {
+  background-color: #0d6d62;
+}
+
+.bottom-bar-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

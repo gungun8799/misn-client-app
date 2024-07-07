@@ -1,0 +1,199 @@
+.requestSubmissionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+  background-color: #f5f7fa; /* Matches the background of the image */
+}
+
+.backButton {
+  align-self: flex-start;
+  margin: 20px;
+  margin-top: -100px;
+  padding: 10px 20px;
+  background-color: #f5f7fa;
+  color: #118881;
+  border: none;
+  cursor: pointer;
+}
+
+
+.instructionText{
+  color: #000000;
+  margin-left: 1vh;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 2.5em;
+ 
+  font-family: monospace;
+  
+}
+
+.backButton:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+
+
+.instructionTextContainer {
+  width: 40vh;
+  margin-bottom: 5vh;
+}
+
+
+
+
+.instructionButton {
+  background-color: white;
+  color: #118881;
+  border: solid 2px #118881;
+  border-radius: 5px;
+  height: 50px;
+  margin-top:3vh;
+}
+
+
+.submitButton {
+  padding: 15px 30px;
+  background-color: #118881;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+
+.startInterviewButton {
+  
+  padding: 15px 30px;
+  background-color: #118881;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+
+/* Add these styles to your existing CSS file */
+
+/* Style for the Start Recording button */
+.recordingButton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.recordingButton:hover {
+  background-color: #45a049;
+}
+
+/* Style for the Next Question button */
+.nextQuestionButton {
+  background-color: #008CBA; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.nextQuestionButton:hover {
+  background-color: #007bb5;
+}
+
+
+
+/* loading animation */
+.loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(89, 89, 89, 0.5); /* Grey background with transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 74.8px;
+  height: 74.8px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner > div {
+  background-color: rgba(65,175,168,0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2.2px solid #9ae7e2;
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-22.4px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(22.4px);
+}
+
+@keyframes spinner-y0fdc1 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+
+}
+
+
+
